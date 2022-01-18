@@ -32,7 +32,7 @@ public class Chapter01 {
         }
 
         System.out.println();
-
+        //在一次运行中对一篇文章进行投票
         articleVote(conn, "other_user", "article:" + articleId);
         String votes = conn.hget("article:" + articleId, "votes");
         System.out.println("We voted for the article, it now has votes: " + votes);
